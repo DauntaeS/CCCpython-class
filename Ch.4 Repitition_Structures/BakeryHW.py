@@ -45,5 +45,3 @@ for i in range(store_qty):
 
     else:
         print("Not sure?")
-
-    # print(f"Store inventory muffins: {muffins}, cupcakes {cupcakes}.")
