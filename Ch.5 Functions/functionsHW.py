@@ -1,7 +1,6 @@
 # Write a program that validates input values using just one function. Ask the user to enter hours and minutes and the program should use one function to validate if the hours are between 0 and 23 and the minutes are between 0 and 59. Program output should indicate the number of hours and minutes and the input validation function should keep asking the user to enter valid values.This one input validation function should be called from the main function. See sample output below. Submit python program and screenshot of output
 
 # Input
-
 # hours
 # minutes
 
@@ -22,6 +21,7 @@
 
 def main():
     while True:
+        print("Please enter a time: hours, then minutes.")
         hours = int(input("Enter a value between 0 and 23 "))
         minutes = int(input("Enter a value between 0 and 59 "))
         if time_window(hours, minutes):
