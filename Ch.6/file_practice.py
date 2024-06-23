@@ -18,7 +18,7 @@ def main():
         avg = 0
         total = 0
 
-        infile = open("Ch.6/numbers.txt", "r")
+        infile = open("numbers.txt", "r")
 
         line = infile.readline()
         counter = 1

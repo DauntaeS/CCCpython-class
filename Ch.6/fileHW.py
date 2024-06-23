@@ -2,7 +2,7 @@ def main():
     name = input("Whats your name? ")
     description = input("Tell me about yourself ")
 
-    html_file = open("index.html", "w")
+    html_file = open("webpage.html", "w")
 
     make_html(html_file, name, description)
 
