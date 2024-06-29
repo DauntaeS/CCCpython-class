@@ -1,3 +1,6 @@
+import math
+
+
 def main():
     months = [
         "Jan",
@@ -22,7 +25,7 @@ def main():
         rainfall.append(amount)
         total += amount
 
-    avg = total / len(months)
+    avg = math.ceil(total / len(months))
 
     max_rainfall = max(rainfall)
     min_rainfall = min(rainfall)
