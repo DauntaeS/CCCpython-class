@@ -3,25 +3,22 @@
 
 
 def main():
-    line = " "
-    counter = 0
-    total = 0
-    dict = {}
+    # opens the file for reading
+    with open("Ch.8 Dictionaries & Sets/sales_data.txt", "r") as infile:
+        dict = {}
+        # reads initial line and assigns to line variable
+        # line = infile.readline()
 
-    infile = open("Ch.8 Dictionaries & Sets/sales_data.txt", "r")
+        for text in infile:
+            line = text.split(",")
+            name = line[0].strip()
+            amount = int(line[1].strip())
+            price = float(line[2].strip())
 
-    line = infile.readline()
-    counter = 1
+            total_sales = amount * price
 
-    while line != "":
-        key, value = line.rstrip("\n").split(",")
-        dict[key.strip()] = value.strip()
-        line = infile.readline()
-        counter += 1
-
-        print(line)
-
-        infile.close()
+            if name not in dict:
+                pass
 
 
 main()
