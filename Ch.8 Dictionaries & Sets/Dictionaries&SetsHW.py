@@ -16,7 +16,7 @@ from tabulate import tabulate
 
 # Output
 # Table containing data from dictionary
-
+.
 
 def main():
     # opens the file for reading
