@@ -1,5 +1,16 @@
 # Design a simple class hierarchy to model geometric shapes, focusing on the concept of inheritance and method overriding. Start by creating a base class named Shape, which includes a method area() intended to be overridden by its subclasses. Then, develop two subclasses: Square and Triangle. The Square class should have a single attribute, side, and an overridden area() method that calculates and returns the square's area. Similarly, the Triangle class will have two attributes, base and height, with its area() method overridden to compute and return the triangle's area. Create a square oject and a triangle object and print their area.
 
+# Input
+# None
+
+# Process
+# Create parent Shape class
+# create class that mutates original class methods
+
+# Output
+# square obj
+# triangle obj
+
 
 class Shape:
     def area(self):
